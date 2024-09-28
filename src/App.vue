@@ -53,7 +53,7 @@
       </main>
       <div v-else id="loading">
         <img src="/icon/logo.png" alt="logo" class="logo" />
-        <span class="tip">开发中</span>
+        <span class="tip">加载中</span>
       </div>
     </Transition>
   </Provider>
@@ -75,7 +75,7 @@ const status = statusStore();
 const mainClickable = ref(false);
 
 // 获取配置
-const welcomeText = import.meta.env.VITE_WELCOME_TEXT ?? "欢迎访问本站";
+const welcomeText = import.meta.env.VITE_WELCOME_TEXT ?? "欢迎来到送分起始页";
 
 // 鼠标右键
 const mainContextmenu = (event) => {
